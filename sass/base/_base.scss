@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
+    
 }
 
 // Defines what 1rem is
@@ -13,5 +13,7 @@ html {
 }
 
 body {
+    box-sizing: border-box;
     background-color: $color-grey-1;
+    height: 1000rem;
 }

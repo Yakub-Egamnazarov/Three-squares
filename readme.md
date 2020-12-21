@@ -3,3 +3,4 @@ This website is the copy of foursquares.com, and was created only for CSS and HT
 1. Create Menu bar -section 
 2. Create hero section with background-video
 3. Follow ... 
+

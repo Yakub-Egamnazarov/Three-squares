@@ -1,0 +1,77 @@
+.header {
+    width: 100vw;
+    height: 8rem;
+    background-color: $color-white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    box-shadow: 0 2px 4px rgba($color-black-1, .4);
+
+    @include clearfix();
+
+    .logo-box {
+        width: 30%;
+        float: left;
+
+        font-size: 4rem;
+        font-weight: 600;
+        padding: .5rem 2rem;
+
+        @include centerY();
+
+        .logo__link {
+            text-decoration: none;
+            color: $color-black-1;
+            letter-spacing: 1px;
+            cursor: pointer;
+
+            transition: all .3s;
+
+            &:hover {
+                color: $color-primary-dark;
+                transform: scale(1.5);
+            }
+        }
+    }
+
+    .nav-bar{
+        width: 65%;
+        float: right;
+        text-align: right;
+
+        @include centerY();
+
+        &__items {
+            list-style: none;
+            padding: 0;
+        }
+        
+        &__item {
+            margin: 2rem 3rem;
+            // padding: 2rem 3rem;
+            display: inline-block;
+            font-size: 1.6rem;
+
+            &:last-child {
+                margin: 2rem 0;
+                // padding: 2rem 0;
+                margin-right: 3rem;
+            }
+        }
+
+        &__link {
+            text-decoration: none;
+            color: $color-grey-5;
+            border-bottom: 3px solid transparent;
+            padding-bottom: 3rem;
+
+            transition: border-bottom .3s ease .1s;
+            
+            &:hover {
+                color: $color-black-1;
+                border-bottom-color: $color-primary;
+            }
+        }
+    }
+}
