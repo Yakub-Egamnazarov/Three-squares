@@ -1,6 +1,7 @@
 images-raw
 node_modules/
 .vscode/
+ref/
 package-lock.json
 
 *.env
