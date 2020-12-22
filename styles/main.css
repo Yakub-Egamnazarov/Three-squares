@@ -1,3 +1,21 @@
+/* 
+0 - 600px :         Phone 
+600 - 900px :       Tablet Portrait 
+900 - 1200px:       Landscape
+1200 - 1800:        normal styles performed
+1800+ :             Big desktop screens
+
+Breakpoint Argument Choices: 
+-phone 
+-tab-port 
+-tab-land 
+-big-desktop
+
+ORDER: Base + typography > General Layout + grid > Page Layout > Components
+
+1em = 16px;
+
+*/
 @keyframes moveInRight {
   0% {
     transform: translateX(-10rem);
@@ -53,11 +71,24 @@
 
 html {
   font-size: 62.5%; }
+  @media only screen and (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media only screen and (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media only screen and (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
 
 body {
   box-sizing: border-box;
   background-color: #f4f5f9;
   height: 1000rem; }
+
+::selection {
+  background-color: #3F51B5;
+  color: #ffffff; }
 
 body {
   font-family: 'Roboto', sans-serif;
@@ -173,7 +204,7 @@ body {
 
 .section-hero {
   position: relative;
-  margin-top: 8.5rem;
+  margin-top: 8.2rem;
   width: 100%;
   height: 70rem;
   text-align: center; }
@@ -187,8 +218,8 @@ body {
       animation: moveInRight-long 1s  2s;
       animation-fill-mode: backwards; }
     .section-hero__text--2 {
-      animation: moveInLeft-long 1s  3.5s;
+      animation: moveInLeft-long 1s  5s;
       animation-fill-mode: backwards; }
     .section-hero__text--3 {
-      animation: moveInUp-long 1s  7s;
+      animation: moveInUp-long 1s  8.5s;
       animation-fill-mode: backwards; }
