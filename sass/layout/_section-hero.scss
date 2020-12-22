@@ -7,7 +7,7 @@
 
     &__text {
         position: absolute;
-        // width: 100%;
+        width: 100%;
         top: 70%;
         left: 50%;
 
@@ -18,17 +18,17 @@
 
         &--1 {
             // opacity: ;
-            animation: moveInRight-long 1s  2s;
+            animation: moveInRight-long 1s  1s;
             animation-fill-mode: backwards;
         }
         
         &--2 {
-            animation: moveInLeft-long 1s  5s;
+            animation: moveInLeft-long 1s  2s;
             animation-fill-mode: backwards;
         }
         
         &--3 {
-            animation: moveInUp-long 1s  8.5s;
+            animation: moveInUp-long 1s  3s;
             animation-fill-mode: backwards;
         }
     }

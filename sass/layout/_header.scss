@@ -20,6 +20,20 @@
 
         animation: moveInLeft .8s;
 
+        @include respond(tab-land) {
+            font-size: 3.5rem;
+        }
+
+        @include respond(tab-port) {
+            font-size: 2.3rem;
+            width: 25%;
+        }
+
+        @include respond(phone) {
+            width: 100%;
+            padding: .1rem .5rem
+        }
+
         .logo__link {
             text-decoration: none;
             color: $color-black-1;
@@ -42,6 +56,17 @@
 
         @include centerY();
 
+        @include respond(tab-port) {
+            width: 73%;
+        }
+
+        @include respond(phone) {
+            width: 100%;
+            transform: translateY(-100%);
+        }
+
+
+
         &__items {
             list-style: none;
             padding: 0;
@@ -54,11 +79,29 @@
             display: inline-block;
             font-size: 1.6rem;
 
+            @include respond(tab-land) {
+                margin: 2rem 1rem;
+            }
+
+            @include respond(tab-port) {
+                margin: 1rem .3rem;
+            }
+
+            @include respond(phone) {
+                margin: .1rem .3rem;
+            }
+
             &:last-child {
                 margin: 2rem 0;
                 // padding: 2rem 0;
                 margin-right: 3rem;
+
+                @include respond(tab-port) {
+                    margin-right: 2rem;
+                }
             }
+
+
         }
 
         &__link {
@@ -72,6 +115,10 @@
             &:hover {
                 color: $color-black-1;
                 border-bottom-color: $color-primary;
+            }
+
+            @include respond(phone) {
+                padding-bottom: 2rem;
             }
         }
     }

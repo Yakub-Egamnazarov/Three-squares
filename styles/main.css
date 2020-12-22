@@ -128,6 +128,9 @@ body {
   padding: .6rem 1.5rem;
   border-radius: 2px;
   font-weight: 500; }
+  @media only screen and (max-width: 56.25em) {
+    .btn {
+      padding: .5rem; } }
   .btn--blue {
     background-color: #303F9F;
     color: #f4f5f9;
@@ -165,6 +168,17 @@ body {
     font-weight: 600;
     padding: .5rem 2rem;
     animation: moveInLeft .8s; }
+    @media only screen and (max-width: 75em) {
+      .header .logo-box {
+        font-size: 3.5rem; } }
+    @media only screen and (max-width: 56.25em) {
+      .header .logo-box {
+        font-size: 2.3rem;
+        width: 25%; } }
+    @media only screen and (max-width: 37.5em) {
+      .header .logo-box {
+        width: 100%;
+        padding: .1rem .5rem; } }
     .header .logo-box .logo__link {
       text-decoration: none;
       color: #000000;
@@ -181,6 +195,13 @@ body {
     position: relative;
     top: 50%;
     transform: translateY(-50%); }
+    @media only screen and (max-width: 56.25em) {
+      .header .nav-bar {
+        width: 73%; } }
+    @media only screen and (max-width: 37.5em) {
+      .header .nav-bar {
+        width: 100%;
+        transform: translateY(-100%); } }
     .header .nav-bar__items {
       list-style: none;
       padding: 0;
@@ -189,9 +210,21 @@ body {
       margin: 2rem 3rem;
       display: inline-block;
       font-size: 1.6rem; }
+      @media only screen and (max-width: 75em) {
+        .header .nav-bar__item {
+          margin: 2rem 1rem; } }
+      @media only screen and (max-width: 56.25em) {
+        .header .nav-bar__item {
+          margin: 1rem .3rem; } }
+      @media only screen and (max-width: 37.5em) {
+        .header .nav-bar__item {
+          margin: .1rem .3rem; } }
       .header .nav-bar__item:last-child {
         margin: 2rem 0;
         margin-right: 3rem; }
+        @media only screen and (max-width: 56.25em) {
+          .header .nav-bar__item:last-child {
+            margin-right: 2rem; } }
     .header .nav-bar__link {
       text-decoration: none;
       color: #212121;
@@ -201,6 +234,9 @@ body {
       .header .nav-bar__link:hover {
         color: #000000;
         border-bottom-color: #3F51B5; }
+      @media only screen and (max-width: 37.5em) {
+        .header .nav-bar__link {
+          padding-bottom: 2rem; } }
 
 .section-hero {
   position: relative;
@@ -210,16 +246,17 @@ body {
   text-align: center; }
   .section-hero__text {
     position: absolute;
+    width: 100%;
     top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
     backface-visibility: hidden; }
     .section-hero__text--1 {
-      animation: moveInRight-long 1s  2s;
+      animation: moveInRight-long 1s  1s;
       animation-fill-mode: backwards; }
     .section-hero__text--2 {
-      animation: moveInLeft-long 1s  5s;
+      animation: moveInLeft-long 1s  2s;
       animation-fill-mode: backwards; }
     .section-hero__text--3 {
-      animation: moveInUp-long 1s  8.5s;
+      animation: moveInUp-long 1s  3s;
       animation-fill-mode: backwards; }

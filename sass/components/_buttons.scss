@@ -3,6 +3,11 @@
     padding: .6rem 1.5rem;
     border-radius: 2px;
     font-weight: 500;
+
+
+    @include respond(tab-port) {
+        padding: .5rem;
+    }
     
     &--blue {
         background-color: $color-primary-dark;
