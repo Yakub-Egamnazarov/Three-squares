@@ -18,7 +18,7 @@
         font-weight: 600;
         padding: .5rem 2rem;
 
-        @include centerY();
+        animation: moveInLeft .8s;
 
         .logo__link {
             text-decoration: none;
@@ -45,6 +45,7 @@
         &__items {
             list-style: none;
             padding: 0;
+            animation: moveInRight .8s;
         }
         
         &__item {
