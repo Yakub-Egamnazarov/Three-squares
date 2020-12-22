@@ -40,7 +40,7 @@ ORDER: Base + typography > General Layout + grid > Page Layout > Components
 
 @keyframes moveInRight-long {
   0% {
-    transform: translateX(-100%);
+    transform: translateX(-20rem);
     opacity: 0; }
   100% {
     transform: translateX(0);
@@ -48,7 +48,7 @@ ORDER: Base + typography > General Layout + grid > Page Layout > Components
 
 @keyframes moveInLeft-long {
   0% {
-    transform: translateX(100%);
+    transform: translateX(20rem);
     opacity: 0; }
   100% {
     transform: translateX(0);
@@ -56,7 +56,7 @@ ORDER: Base + typography > General Layout + grid > Page Layout > Components
 
 @keyframes moveInUp-long {
   0% {
-    transform: translateY(100%);
+    transform: translateY(20rem);
     opacity: 0; }
   100% {
     transform: translateY(0);
@@ -109,6 +109,9 @@ body {
 .margin-right-small {
   margin-right: 1.5rem !important; }
 
+.margin-bottom-big {
+  margin-bottom: 5rem !important; }
+
 .bg-video {
   position: absolute;
   top: 0;
@@ -148,6 +151,41 @@ body {
       color: #303F9F;
       box-shadow: 6px 6px 0 rgba(48, 63, 159, 0.6); }
 
+.row {
+  max-width: 80%;
+  margin: 0 auto; }
+  .row:not(:last-child) {
+    margin-bottom: 8rem; }
+    @media only screen and (max-width: 56.25em) {
+      .row:not(:last-child) {
+        margin-bottom: 6rem; } }
+  .row::after {
+    content: '';
+    display: table;
+    clear: both; }
+  .row [class^="col-"] {
+    float: left; }
+    .row [class^="col-"]:not(:last-child) {
+      margin-right: 6rem; }
+      @media only screen and (max-width: 56.25em) {
+        .row [class^="col-"]:not(:last-child) {
+          margin-right: 0; } }
+    @media only screen and (max-width: 56.25em) {
+      .row [class^="col-"] {
+        width: 100%; } }
+  .row .col-1-of-2 {
+    width: calc((100% - 6rem) / 2); }
+  .row .col-1-of-3 {
+    width: calc((100% - 2 * 6rem) / 3); }
+  .row .col-2-of-3 {
+    width: calc(2 * ((100% - 2 * 6rem) / 3) + 6rem); }
+  .row .col-1-of-4 {
+    width: calc((100% - 3 * 6rem) / 4); }
+  .row .col-2-of-4 {
+    width: calc((2 * (100% - 3 * 6rem) / 4) + 6rem); }
+  .row .col-3-of-4 {
+    width: calc((3 * (100% - 3 * 6rem) / 4) + 2 * 6rem); }
+
 .header {
   width: 100vw;
   height: 8rem;
@@ -159,7 +197,7 @@ body {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4); }
   .header::after {
     content: '';
-    display: tbale;
+    display: table;
     clear: both; }
   .header .logo-box {
     width: 30%;
@@ -240,7 +278,7 @@ body {
 
 .section-hero {
   position: relative;
-  margin-top: 8.2rem;
+  margin-top: 8.5rem;
   width: 100%;
   height: 70rem;
   text-align: center; }
@@ -252,11 +290,11 @@ body {
     transform: translate(-50%, -50%);
     backface-visibility: hidden; }
     .section-hero__text--1 {
-      animation: moveInRight-long 1s  1s;
+      animation: moveInRight-long 1s  .8s;
       animation-fill-mode: backwards; }
     .section-hero__text--2 {
-      animation: moveInLeft-long 1s  2s;
+      animation: moveInLeft-long 1s  1s;
       animation-fill-mode: backwards; }
     .section-hero__text--3 {
-      animation: moveInUp-long 1s  3s;
+      animation: moveInUp-long 1s  2s;
       animation-fill-mode: backwards; }
