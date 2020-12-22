@@ -103,14 +103,17 @@ body {
     font-size: 5rem;
     font-weight: 400;
     text-transform: uppercase;
-    letter-spacing: 2px;
-    color: #f4f5f9; }
+    letter-spacing: 2px; }
+    .heading-primary__text--white {
+      color: #f4f5f9; }
+    .heading-primary__text--black {
+      color: #444444; }
 
 .margin-right-small {
   margin-right: 1.5rem !important; }
 
 .margin-bottom-big {
-  margin-bottom: 5rem !important; }
+  margin-bottom: 10rem !important; }
 
 .bg-video {
   position: absolute;

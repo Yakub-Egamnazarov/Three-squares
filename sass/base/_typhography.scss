@@ -15,6 +15,18 @@ body {
         font-weight: 400;
         text-transform: uppercase;
         letter-spacing: 2px;
-        color: $color-grey-1;
+
+        &--white {
+            color: $color-grey-1;
+
+        }
+
+        &--black {
+            color: $color-grey-4;
+        }
     }
+}
+
+.heading--tertiary {
+    
 }
