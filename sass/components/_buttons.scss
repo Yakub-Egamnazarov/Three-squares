@@ -16,8 +16,6 @@
         border: 1px solid $color-primary;
         transition: all .3s ease;
 
-        
-
         &:hover {
             background-color: $color-primary;
             box-shadow: 6px 6px 0 rgba($color-primary-dark, .6);
@@ -41,11 +39,11 @@
         .icon {
             transition: all .4s ease;
         }
-
-        &:hover .icon {
-            // font-size: 3rem;
-            transform: scale(1.5) translateX(1.5rem);
-        }
     }
 }
 
+.btn-wide {
+    padding-left: 4rem !important;
+    padding-right: 4rem !important;
+    text-align: center;
+}

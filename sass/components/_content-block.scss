@@ -1,18 +1,20 @@
 .content-block {
     padding: 3rem;
-
-    // @include centerY;
+    text-align: center;
 
     &__links{
-        padding: 2rem;
+        padding: 2rem 0;
         list-style: none;
-        text-align: left;
-
+        // text-align: left;
     }
-
+    
     &__link {
-        padding: 0 2rem;
         display: inline-block;
+        
+        &:not(:last-of-type) {
+            margin-right: 4rem;
+
+        }
     }
 
 }
