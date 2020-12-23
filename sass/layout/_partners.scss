@@ -1,36 +1,87 @@
 .partners {
+    margin-top: 5rem;
     width: 100%;
     text-align: center;
 
 
     &__images {
-        // position: relative;
         display: block;
-        width: 100%;
+        margin: 0 2rem;
+        max-width: 80%;
+        text-align: center;
+
         position: relative;
         left: 50%;
         transform: translateX(-50%);
-        list-style: none;
-        margin: 2rem 0;
-        height: 14rem;
     }
 
     &__image {
-
-        background-color: $color-grey-1;
+        background-color: transparent;
         display: inline-block;
-        padding: 2rem 2rem;
-        margin: 0 4rem;
-        max-width: 14rem;
-        height: 100%;
+        margin: 2rem;
+        margin-bottom: 1rem;
+        padding: 1.5rem;
+        width: 16rem;
+        height: 16rem;
 
-        // position: relative;
-        // top: 50%;
-        // transform: translateY(-50%);
+        border: 1px solid transparent;
+        border-radius: 5px;
+
+        background-position: center;
+        background-repeat: no-repeat;
+
+        transition: all .4s;
 
 
-        img {
-            width: 100%;
+        &:hover {
+            border-color: rgba($color-primary, .4);
+            transform: translateY(-4px) scale(1.1);
+            box-shadow: 4px 8px 16px rgba($color-primary, .4);
         }
+        
+        &--1 {
+            background-image: url(../images/logo-snapchat.svg);
+            background-size: 50%;
+        }
+        &--2 {
+            background-image: url(../images/logo-air-bnb.png);
+            background-size: 90%;
+        }
+        &--3 {
+            background-image: url(../images/logo-Uber.jpg);
+            background-size: 80%;
+        }
+        &--4 {
+            background-image: url(../images/logo-twitter.png);
+            background-size: 30%;
+        }
+        &--5 {
+            background-image: url(../images/logo-spotify.svg);
+            background-size: 90%;
+        }
+        &--6 {
+            background-image: url(../images/logo-samsung.svg);
+            background-size: 90%;
+        }
+        &--7 {
+            background-image: url(../images/logo-AWS_logo_RGB.png);
+            background-size: 40%;
+        }
+        &--8 {
+            background-image: url(../images/logo-accuWeather.png);
+            background-size: 90%;
+        }
+        &--9 {
+            background-image: url(../images/logo-Apple_logo_black.svg);
+            background-size: 25%;
+        }
+        &--10 {
+            background-image: url(../images/logo-microsoft.png);
+            background-size: 90%;
+        }
+
+
+
+
     }
 }

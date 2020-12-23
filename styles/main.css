@@ -115,6 +115,15 @@ body {
 .content-block__link {
   font-size: 2rem; }
 
+.heading-secondary {
+  margin-top: 4rem; }
+  .heading-secondary__text {
+    font-size: 4rem;
+    font-weight: 300;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #212121; }
+
 .margin-right-small {
   margin-right: 1.5rem !important; }
 
@@ -315,26 +324,64 @@ body {
           padding-bottom: 2rem; } }
 
 .partners {
+  margin-top: 5rem;
   width: 100%;
   text-align: center; }
   .partners__images {
     display: block;
-    width: 100%;
+    margin: 0 2rem;
+    max-width: 80%;
+    text-align: center;
     position: relative;
     left: 50%;
-    transform: translateX(-50%);
-    list-style: none;
-    margin: 2rem 0;
-    height: 14rem; }
+    transform: translateX(-50%); }
   .partners__image {
-    background-color: #f4f5f9;
+    background-color: transparent;
     display: inline-block;
-    padding: 2rem 2rem;
-    margin: 0 4rem;
-    max-width: 14rem;
-    height: 100%; }
-    .partners__image img {
-      width: 100%; }
+    margin: 2rem;
+    margin-bottom: 1rem;
+    padding: 1.5rem;
+    width: 16rem;
+    height: 16rem;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all .4s; }
+    .partners__image:hover {
+      border-color: rgba(63, 81, 181, 0.4);
+      transform: translateY(-4px) scale(1.1);
+      box-shadow: 4px 8px 16px rgba(63, 81, 181, 0.4); }
+    .partners__image--1 {
+      background-image: url(../images/logo-snapchat.svg);
+      background-size: 50%; }
+    .partners__image--2 {
+      background-image: url(../images/logo-air-bnb.png);
+      background-size: 90%; }
+    .partners__image--3 {
+      background-image: url(../images/logo-Uber.jpg);
+      background-size: 80%; }
+    .partners__image--4 {
+      background-image: url(../images/logo-twitter.png);
+      background-size: 30%; }
+    .partners__image--5 {
+      background-image: url(../images/logo-spotify.svg);
+      background-size: 90%; }
+    .partners__image--6 {
+      background-image: url(../images/logo-samsung.svg);
+      background-size: 90%; }
+    .partners__image--7 {
+      background-image: url(../images/logo-AWS_logo_RGB.png);
+      background-size: 40%; }
+    .partners__image--8 {
+      background-image: url(../images/logo-accuWeather.png);
+      background-size: 90%; }
+    .partners__image--9 {
+      background-image: url(../images/logo-Apple_logo_black.svg);
+      background-size: 25%; }
+    .partners__image--10 {
+      background-image: url(../images/logo-microsoft.png);
+      background-size: 90%; }
 
 .section-hero {
   position: relative;
