@@ -27,6 +27,14 @@ body {
     }
 }
 
-.heading--tertiary {
+.content-block {
+
+    &__text {
+        color: $color-grey-3;
+        font-size: 2.4rem;
+    }
     
+    &__link {
+        font-size: 2rem;
+    }
 }

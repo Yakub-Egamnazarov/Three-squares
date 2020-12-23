@@ -83,7 +83,6 @@ html {
 
 body {
   box-sizing: border-box;
-  background-color: #f4f5f9;
   height: 1000rem; }
 
 ::selection {
@@ -109,11 +108,18 @@ body {
     .heading-primary__text--black {
       color: #444444; }
 
+.content-block__text {
+  color: #757575;
+  font-size: 2.4rem; }
+
+.content-block__link {
+  font-size: 2rem; }
+
 .margin-right-small {
   margin-right: 1.5rem !important; }
 
 .margin-bottom-big {
-  margin-bottom: 10rem !important; }
+  margin-bottom: 8rem !important; }
 
 .bg-video {
   position: absolute;
@@ -130,6 +136,7 @@ body {
     animation: moveIn .8s ease; }
 
 .btn {
+  display: inline-block;
   text-decoration: none;
   padding: .6rem 1.5rem;
   border-radius: 2px;
@@ -153,6 +160,25 @@ body {
     .btn--white:hover {
       color: #303F9F;
       box-shadow: 6px 6px 0 rgba(48, 63, 159, 0.6); }
+    .btn--white .icon {
+      transition: all .4s ease; }
+    .btn--white:hover .icon {
+      transform: scale(1.5) translateX(1.5rem); }
+
+.content-block {
+  padding: 3rem; }
+  .content-block__links {
+    padding: 2rem;
+    list-style: none;
+    text-align: left; }
+  .content-block__link {
+    padding: 0 2rem;
+    display: inline-block; }
+
+.content-two {
+  padding: 3rem 0;
+  width: 100%;
+  text-align: center; }
 
 .row {
   max-width: 80%;
@@ -301,3 +327,8 @@ body {
     .section-hero__text--3 {
       animation: moveInUp-long 1s  2s;
       animation-fill-mode: backwards; }
+
+section {
+  margin: 5rem 0; }
+  section:nth-of-type(even) {
+    background-color: rgba(244, 245, 249, 0.3); }
