@@ -23,12 +23,15 @@
     &__picture {
         width: 30vw;
         height: 30vw;
+        background-size: cover;
+        background-repeat: no-repeat;
 
         &--1 {
-
             background-image: url(../images/article-pic-1.jpg);
-            background-size: cover;
-            background-repeat: no-repeat;
+        }
+        &--2 {
+            background-image: url(../images/article-pic-2.jpg);
+            background-position: center;
         }
         
 
