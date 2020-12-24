@@ -1,0 +1,18 @@
+.article-box {
+    padding: 2rem;
+
+    text-align: left;
+
+    
+
+    &__links {
+        list-style: none;
+        padding: .5rem 2rem;
+    }
+
+    &__link {
+        display: inline-block;
+        padding-right: 1rem;
+    }
+
+}

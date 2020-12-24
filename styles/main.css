@@ -124,6 +124,16 @@ body {
     text-transform: uppercase;
     color: #212121; }
 
+.heading-tertiary {
+  margin-top: .2rem; }
+  .heading-tertiary__text {
+    font-size: 3rem;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #212121;
+    line-height: 1.4; }
+
 .content__tag {
   padding: 3rem;
   margin: 0 .5rem;
@@ -131,6 +141,12 @@ body {
   font-family: inherit;
   color: #212121;
   letter-spacing: 2px; }
+
+.article-box__par {
+  font-size: 1.4rem;
+  padding: .5rem 2rem;
+  font-family: inherit;
+  color: #444444; }
 
 .margin-right-small {
   margin-right: 1.5rem !important; }
@@ -147,19 +163,43 @@ body {
   margin-top: 0 !important;
   margin-bottom: 0 !important; }
 
+.clear-hor-padding-margin {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important; }
+
+.article-box {
+  padding: 2rem;
+  text-align: left; }
+  .article-box__links {
+    list-style: none;
+    padding: .5rem 2rem; }
+  .article-box__link {
+    display: inline-block;
+    padding-right: 1rem; }
+
 .article {
   width: 80%;
   position: relative;
   left: 50%;
   transform: translateX(-50%); }
+  .article__block {
+    min-width: 30vw;
+    min-height: 30vw;
+    border-radius: 3px;
+    border: 1px solid transparent;
+    overflow: hidden; }
+    .article__block:hover {
+      border: 1px solid #3F51B5;
+      box-shadow: 2px 4px 6px rgba(63, 81, 181, 0.4); }
   .article__picture {
     width: 30vw;
-    height: 30vw;
-    background-color: orangered; }
-  .article__block {
-    width: 30vw;
-    height: 30vw;
-    background-color: orangered; }
+    height: 30vw; }
+    .article__picture--1 {
+      background-image: url(../images/article-pic-1.jpg);
+      background-size: cover;
+      background-repeat: no-repeat; }
 
 .bg-video {
   position: absolute;
@@ -207,6 +247,16 @@ body {
   padding-left: 4rem !important;
   padding-right: 4rem !important;
   text-align: center; }
+
+.btn--article {
+  padding: .5rem 0;
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #3F51B5;
+  border-bottom: 1px solid transparent;
+  transition: all .4 ease; }
+  .btn--article:hover {
+    border-bottom-color: #3F51B5; }
 
 .content-block {
   padding: 3rem;
