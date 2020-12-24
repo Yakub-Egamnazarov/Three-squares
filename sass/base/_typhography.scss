@@ -50,3 +50,13 @@ body {
         color: $color-grey-5;
     }
 }
+
+.content__tag {
+    padding: 3rem; 
+    margin: 0 .5rem;
+    font-size: 1.4rem;
+    font-family: inherit;
+    color: $color-grey-5; 
+    letter-spacing: 2px;
+
+}

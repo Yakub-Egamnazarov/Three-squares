@@ -1,0 +1,22 @@
+.article {
+    width: 80%;
+
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+
+    &__picture {
+        width: 30vw;
+        height: 30vw;
+        background-color: orangered;
+    }
+
+    &__block {
+        width: 30vw;
+        height: 30vw;
+        background-color: orangered;
+
+    }
+
+
+}

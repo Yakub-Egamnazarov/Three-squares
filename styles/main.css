@@ -124,6 +124,14 @@ body {
     text-transform: uppercase;
     color: #212121; }
 
+.content__tag {
+  padding: 3rem;
+  margin: 0 .5rem;
+  font-size: 1.4rem;
+  font-family: inherit;
+  color: #212121;
+  letter-spacing: 2px; }
+
 .margin-right-small {
   margin-right: 1.5rem !important; }
 
@@ -132,6 +140,26 @@ body {
 
 .padding-vertical {
   padding: 2rem 0 !important; }
+
+.clear-ver-padding-margin {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important; }
+
+.article {
+  width: 80%;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%); }
+  .article__picture {
+    width: 30vw;
+    height: 30vw;
+    background-color: orangered; }
+  .article__block {
+    width: 30vw;
+    height: 30vw;
+    background-color: orangered; }
 
 .bg-video {
   position: absolute;
@@ -195,6 +223,17 @@ body {
   padding: 3rem 0;
   width: 100%;
   text-align: center; }
+
+.content {
+  width: 100%;
+  text-align: center; }
+  .content__heading {
+    text-align: left;
+    width: 80%;
+    padding: 0 10rem;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%); }
 
 .row {
   max-width: 80%;

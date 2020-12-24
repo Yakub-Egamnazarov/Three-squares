@@ -1,0 +1,19 @@
+.content {
+    width: 100%;
+
+    text-align: center;
+
+    &__heading {
+        text-align: left;
+        width: 80%;
+        padding: 0 10rem;
+
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+
+
+
+}
