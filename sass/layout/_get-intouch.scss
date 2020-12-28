@@ -1,0 +1,25 @@
+.get-intouch {
+    margin: 2rem 0;
+    text-align: center;
+    
+
+    &__box {
+        width: 80%;
+        padding: 2rem 4rem;
+        border-radius: 4px;
+        background-image: $gradient-primary;
+
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+
+        box-shadow: 2px 4px 8px rgba($color-primary, .6);
+
+    }
+
+
+    &__link {
+        text-align: left;
+        font-size: 2rem;
+    }
+}

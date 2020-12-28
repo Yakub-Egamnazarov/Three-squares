@@ -27,13 +27,17 @@
         color: $color-grey-5;
         border: 1px solid $color-primary;
 
-        transition: all .3s ease;
-
-        
+        transition: all .3s ease;  
 
         &:hover {
+            background-color: $color-grey-1;
             color: $color-primary-dark;
-            box-shadow: 6px 6px 0 rgba($color-primary-dark, .6);
+            box-shadow: 6px 6px 0 rgba($color-grey-1, .6);
+            border-color: transparent;
+        }
+
+        &:focus {
+            outline: none;
         }
 
         .icon {
