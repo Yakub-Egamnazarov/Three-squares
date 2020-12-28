@@ -204,6 +204,12 @@ body {
     .article__picture--2 {
       background-image: url(../images/article-pic-2.jpg);
       background-position: center; }
+    .article__picture--3 {
+      background-image: url(../images/article-pic-3.jpg);
+      background-position: center; }
+    .article__picture--4 {
+      background-image: url(../images/article-pic-4.jpg);
+      background-position: center; }
 
 .bg-video {
   position: absolute;
