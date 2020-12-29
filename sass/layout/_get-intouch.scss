@@ -22,4 +22,14 @@
         text-align: left;
         font-size: 2rem;
     }
+
+    &__after-text {
+        margin: 10rem 0;
+        width: 80%;
+        text-align: left;
+
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
 }

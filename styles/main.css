@@ -325,6 +325,13 @@ body {
   .get-intouch__link {
     text-align: left;
     font-size: 2rem; }
+  .get-intouch__after-text {
+    margin: 10rem 0;
+    width: 80%;
+    text-align: left;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%); }
 
 .row {
   max-width: 80%;
